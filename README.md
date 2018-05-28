@@ -32,7 +32,7 @@ Include the script at the end of the body
 
 #### why do this?
 
-Because your css looks like this
+Because your css looks like this!
 
 ```css
 .d-flex {
@@ -63,6 +63,8 @@ Because your css looks like this
   }
 }
 ```
+
+this is just `display: flex` and the css is already a mess
 
 
 
