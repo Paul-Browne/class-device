@@ -1,11 +1,11 @@
 (function() {
 
     var dims = {
-        "laptop": 1520,
-        "tablet": 1320,
-        "tablet-portrait": 1000,
-        "mobile": 720,
-        "mobile-portrait": 400
+        "laptop": 1520,				// 95em
+        "tablet": 1280,				// 80em
+        "tablet-portrait": 1000,	// 62.5em
+        "mobile": 720,				// 45em
+        "mobile-portrait": 440		// 27.5em
     };
 
     function addRemoveClasses(attribute, addOrRemove, el) {
@@ -23,7 +23,7 @@
 
     function containerFunc(device, el) {
         var wW = window.innerWidth;
-        if (wW <= dims[device]) {
+        if (wW < dims[device]) {
             addRemoveClasses('class-' + device, 'add', el);
             addRemoveClasses('class-' + device + '-remove', 'remove', el);
         } else {
