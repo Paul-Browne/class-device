@@ -40,23 +40,27 @@ Because your css looks like this
 }
 
 @media (min-width: 576px){
-.d-sm-flex {
-  display: flex;
+  .d-sm-flex {
+    display: flex;
+  }
 }
 
 @media (min-width: 768px){
-.d-md-flex {
-  display: flex;
+  .d-md-flex {
+    display: flex;
+  }
 }
 
 @media (min-width: 992px){
-.d-lg-flex {
-  display: flex;
+  .d-lg-flex {
+    display: flex;
+  }
 }
 
 @media (min-width: 1200px){
-.d-xl-flex {
-  display: flex;
+  .d-xl-flex {
+    display: flex;
+  }
 }
 ```
 
