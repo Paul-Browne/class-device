@@ -15,7 +15,7 @@ Add classes
 Also remove classes
 
 ```html
-<div class="foo" class-tablet="bar" class-mobile="baz" class-mobile-remove="foo">
+<div class="foo" class-tablet="bar" class-mobile="baz /foo">
   
 <!--
 <div class="foo bar">       on tablet
