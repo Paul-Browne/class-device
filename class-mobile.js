@@ -8,11 +8,11 @@
         "mobile-portrait": 440 		// 27.5em
     };
 
-    function addRemoveClasses(attribute, addOrRemove, el) {
+    function addRemoveClasses(attribute, el, addOrRemove) {
         var attribs = el.getAttribute('class-' + attribute);
         if (attribs) {
             attribs.split(" ").forEach(function(element) {
-                if (addOrRemove == "add") {
+                if (addOrRemove) {
                     if (!element.indexOf("/")) {
                         el.classList.remove(element.slice(1));
                     } else {
@@ -30,9 +30,9 @@
     function containerFunc(device, el) {
         var wW = window.innerWidth;
         if (wW < dims[device]) {
-            addRemoveClasses(device, 'add', el);
+            addRemoveClasses(device, el, true);
         } else {
-            addRemoveClasses(device, 'remove', el);
+            addRemoveClasses(device, el);
         }
     }
 
