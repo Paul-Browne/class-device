@@ -51,9 +51,14 @@
     }
 
     function _resize(a, b) {
+        var c = [window.innerWidth];
         return window.addEventListener("resize", function() {
-            clearTimeout(b),
-                b = setTimeout(a, 150)
+            var e = c.length;
+            c.push(window.innerWidth);
+            if (c[e] !== c[e - 1]) {
+                clearTimeout(b);
+                b = setTimeout(a, 150);
+            }
         }), a
     }
 
