@@ -96,7 +96,7 @@ Maybe... Is your css a mess? Do you have dozens of @media query breakpoints? Som
 
 Having the breakpoints defined in the HTML makes it more intuitive to see whats happening eg. (desktop-first) 
 
-```css
+```html
 <div class="flex p-3 text-xl font-bold" class-tablet-portrait="flex-col /p-3 p-2" class-mobile="/text-xl /p-2 p-1" >
 ```
 
