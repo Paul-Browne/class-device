@@ -94,7 +94,11 @@ var dims = {
 
 Maybe... Is your css a mess? Do you have dozens of @media query breakpoints? Some of them (min-width), some of them (max-width) and some of them both? **class-device** works well with atomic/utility css like tailwind or tachyons.
 
-Having the breakpoints defined in the HTML makes it more intuitive to see whats happening eg. (desktop-first) `<div class="flex p-3 text-xl font-bold" class-tablet-portrait="flex-col /p-3 p-2" class-mobile="/text-xl /p-2 p-1" >`
+Having the breakpoints defined in the HTML makes it more intuitive to see whats happening eg. (desktop-first) 
+
+```css
+<div class="flex p-3 text-xl font-bold" class-tablet-portrait="flex-col /p-3 p-2" class-mobile="/text-xl /p-2 p-1" >
+```
 
 if your css is consistantly well structured, eg 
 
