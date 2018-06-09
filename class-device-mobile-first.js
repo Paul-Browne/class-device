@@ -5,7 +5,7 @@
         "tablet": 720,                  // 45em
         "tablet-landscape": 1000,       // 62.5em
         "laptop": 1280,                 // 80em
-        "desktop": 1520                 // 95em
+        "desktop": 1560                 // 97.5em
     };
 
     function addRemoveClasses(attribute, el, addOrRemove) {
