@@ -69,11 +69,11 @@ In the script (desktop first)
 
 ```js
 var dims = {
-    "laptop": 1520, 			    // 95em
-    "tablet": 1280, 			    // 80em
-    "tablet-portrait": 1000, 	// 62.5em
-    "mobile": 720, 				    // 45em
-    "mobile-portrait": 440 		// 27.5em
+    "laptop": 1560,           // 97.5em
+    "tablet": 1280,           // 80em
+    "tablet-portrait": 1000,  // 62.5em
+    "mobile": 720,            // 45em
+    "mobile-portrait": 440    // 27.5em
 };
 ```
 
@@ -85,7 +85,7 @@ var dims = {
     "tablet": 720,              // 45em
     "tablet-landscape": 1000,   // 62.5em
     "laptop": 1280,             // 80em
-    "desktop": 1520             // 95em
+    "desktop": 1560             // 97.5em
 };
 ```
 
