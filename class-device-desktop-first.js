@@ -1,11 +1,11 @@
 (function() {
 
     var dims = {
-        "laptop": 1560,             // 97.5em
-        "tablet": 1280,             // 80em
-        "tablet-portrait": 1000,    // 62.5em
-        "mobile": 720,              // 45em
-        "mobile-portrait": 440      // 27.5em
+        "laptop": 1560, 			// 97.5em
+        "tablet": 1280, 			// 80em
+        "tablet-portrait": 1000, 	// 62.5em
+        "mobile": 720, 				// 45em
+        "mobile-portrait": 440 		// 27.5em
     };
 
     function addRemoveClasses(attribute, el, addOrRemove) {
@@ -13,13 +13,13 @@
         if (attribs) {
             attribs.split(" ").forEach(function(element) {
                 if (addOrRemove) {
-                    if (!element.indexOf("/")) {
+                    if (!element.indexOf("/") ) {
                         el.classList.remove(element.slice(1));
                     } else {
                         el.classList.add(element);
                     }
                 } else {
-                    if (!~element.indexOf("/")) {
+                    if (!~element.indexOf("/") ) {
                         el.classList.remove(element);
                     }
                 }
@@ -39,7 +39,11 @@
     function initialClasses(el) {
         var ci = "class-initial";
         if (!el.getAttribute(ci)) {
-            el.setAttribute(ci, el.className);
+            el.classList.forEach(function(element){
+                if(!~element.indexOf("js-")){
+                    el.setAttribute(ci, ((el.getAttribute(ci) || "") + " " + element).trim() );
+                }                
+            })
         } else {
             el.getAttribute(ci).split(" ").forEach(function(element) {
                 el.classList.add(element);
