@@ -39,7 +39,11 @@
     function initialClasses(el) {
         var ci = "class-initial";
         if (!el.getAttribute(ci)) {
-            el.setAttribute(ci, el.className);
+            el.classList.forEach(function(element){
+                if(!~element.indexOf("js-")){
+                    el.setAttribute(ci, ((el.getAttribute(ci) || "") + " " + element).trim() );
+                }                
+            })
         } else {
             el.getAttribute(ci).split(" ").forEach(function(element) {
                 el.classList.add(element);
